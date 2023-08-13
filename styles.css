@@ -28,7 +28,7 @@ body {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), linear-gradient(to right, #f06, #9f6);
-    /* filter: blur(10px); */
+    filter: blur(300px);
     z-index: -1;
 }
 
@@ -37,7 +37,7 @@ body {
     box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.3);
     padding: 60px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .login-container h1 {
@@ -72,21 +72,19 @@ form button:hover {
     background-color: #555555;
 }
 
-.social-icons {
+.action-buttons {
     margin-top: 20px;
 }
 
-.social-icons a {
+.action-buttons a {
+    color: #ffffff;
+    text-decoration: none;
     margin: 0 10px;
-}
-
-.social-icons img {
-    width: 30px;
-    height: 30px;
-    opacity: 0.6;
+    font-size: 14px;
+    opacity: 0.4;
     transition: opacity 0.3s;
 }
 
-.social-icons img:hover {
+.action-buttons a:hover {
     opacity: 1;
 }
