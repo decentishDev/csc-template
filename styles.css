@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box; /* Add this line */
+    overflow: hidden;
+}
+
+
+.container {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #121212;
+    text-align: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), linear-gradient(to right, #f06, #9f6);
+    /* filter: blur(10px); */
+    z-index: -1;
+}
+
+.login-container {
+    background-color: #121212;
+    box-shadow: 0px 0px 200px rgba(0, 0, 0, 0.3);
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.login-container h1 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #313131;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555555;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}
