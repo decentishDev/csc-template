@@ -1,11 +1,8 @@
-// script.js
-
 const background = document.querySelector('.background');
 
 function animateBackground() {
-    const time = new Date().getTime() * 0.001; // Adjust speed
+    const time = new Date().getTime() * 0.001;
 
-    // Calculate gradient colors dynamically using sine and cosine functions
     const r1 = Math.sin(time) * 127 + 128;
     const g1 = Math.sin(time + 2) * 127 + 128;
     const b1 = Math.sin(time + 4) * 127 + 128;
@@ -19,3 +16,22 @@ function animateBackground() {
 }
 
 animateBackground();
+
+document.addEventListener("DOMContentLoaded", function() {
+    const loginButton = document.getElementById("loginButton");
+
+    loginButton.addEventListener("click", function() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const desiredUsername = "admin";
+        const desiredPassword = "password";
+
+        if (username === desiredUsername && password === desiredPassword) {
+            location.href = "home/index.html";
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    });
+});
+
