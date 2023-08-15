@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const desiredPassword = "password";
 
         if (username === desiredUsername && password === desiredPassword) {
-            window.location.assign("home/index.html");
+            window.location.assign("home");
         } else {
             alert("Invalid username or password. Please try again.");
         }
